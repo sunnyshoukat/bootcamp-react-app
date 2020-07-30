@@ -17,9 +17,9 @@ jobs:
         with:
            # Yarn command
           cmd: install # npm install / yarn install
-      - name: Build React App
+      - name: Creating Build
         run: yarn build
-      - name: Install Surge
+      - name: Installing Surge
         run: npm install -g surge
       - name: Run surge
-        run: surge ./build bootcamp_react_ziakhan.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./build sunny_bootcamp.surge.sh --token ${{ secrets.SURGE_TOKEN }}
