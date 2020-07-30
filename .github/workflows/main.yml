@@ -14,11 +14,8 @@ jobs:
         uses: actions/setup-node@v2-beta
         with:
           node-version: 12
-      - name: NPM or Yarn install with caching
-        uses: bahmutov/npm-install@v1.1.0
-        with:
-           # Yarn command
-          cmd: install # npm install / yarn install
+      - name: installing npm
+        run : npm install
       - name: Creating Build
         run: yarn build
       - name: Installing Surge
