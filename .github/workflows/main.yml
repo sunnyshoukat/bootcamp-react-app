@@ -17,8 +17,8 @@ jobs:
       - name: installing npm
         run : npm install
       - name: Creating Build
-        run: npm run build
+        run : npm run build
       - name: Installing Surge
-        run: npm install -g surge
+        run : npm install -g surge
       - name: Run surge
-        run: surge ./build http://sunny_bootcamp.surge.sh/ --token ${{ secrets.SURGE_TOKEN }}
+        run : surge ./build http://sunny_bootcamp.surge.sh/ --token ${{ secrets.SURGE_TOKEN }}
