@@ -16,8 +16,10 @@ jobs:
           node-version: 12
       - name: installing npm
         run : npm install
-      - name: Creating Build
-        run : npm run build
+      - name: Build Yarn and npm
+        uses: linchpin/action-build-yarn-npm@master
+        with: 
+          cmd: install 
       - name: Installing Surge
         run : npm install -g surge
       - name: Run surge
