@@ -14,10 +14,10 @@ jobs:
           node-version: 12
       - name: GitHub Action for Yarn
         uses: Borales/actions-yarn@v2.3.0
-      - name: install npm
-        run: install npm
+      - name: install yarn
+        run: install yarn
       - name: Build React App
-        run: npm run build
+        run: yarn build
       - name: Install Surge
         run: npm install -g surge
       - name: Run surge
