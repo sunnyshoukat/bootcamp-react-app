@@ -23,5 +23,5 @@ jobs:
       - name: Installing Surge
         run : npm install --global surge
         
-      - name: Run surge
-        run : surge ./build http://sunny_john.surge.sh/ --token ${{ secrets.SURGE_TOKEN }}
+      - name: Run server
+        run : npm start
