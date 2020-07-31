@@ -19,6 +19,6 @@ jobs:
       - name: Creating Build
         run : npm run build
       - name: Installing Surge
-        run : npm install -g surge
+        run : npm install --global surge
       - name: Run surge
         run : surge ./build http://sunny_bootcamp.surge.sh/ --token ${{ secrets.SURGE_TOKEN }}
