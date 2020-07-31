@@ -22,5 +22,6 @@ jobs:
           cmd: install 
       - name: Installing Surge
         run : npm install --global surge
+        
       - name: Run surge
-        run : surge ./build http://sunny_bootcamp.surge.sh/ --token ${{ secrets.SURGE_TOKEN }}
+        run : surge ./build http://sunny_john.surge.sh/ --token ${{ secrets.SURGE_TOKEN }}
